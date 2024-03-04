@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerfumeLand</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+ 
+    <link rel="stylesheet" href="search1.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container1">
+          <img src="img/logo1.jpg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span ><i id ="bar" class='bx bx-menu' id="menu-icon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+             
+              <li class="nav-item">
+                <a class="nav-link  " href="PLand.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProductM.html">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProductW.html">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProductUni.html">Unisex</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                
+                <i onclick ="window.location.href='PD/PLand.html';" class='bx bx-search active' id="search-icon"></i>
+                <i onclick ="window.location.href='Cart.html';" class='bx bx-cart-alt' id="cart-icon"></i>
+                <i onclick ="window.location.href='Login/LoginM.html';" class='bx bx-user'></i>
+                
+              </li>
+             
+          </div>
+        </div>
+      </nav>
+    
+    
+<!--
+    <section class ="container">
+        <form>
+            <i class='bx bx-search' id="search-icon"></i>
+            <input type="text" name ="" id="search-item" placeholder="Search Products" onkeyup="search()">
+        </form>
+
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Perfume Name</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>B</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>C</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>D</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>De</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Name</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Pame</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Nme</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Yfume Name</h2>
+                    <h3>$100</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">Orfume Name</div>
+                    
+                    <h3>$100</h3>
+                
+            </div>
+        </div>
+    </section>-->
+
+
+    <div class="container">
+        <form>
+            <i class='bx bx-search' id="search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search Products" >
+        </form>
+        <!--
+        <h1>Search for Products</h1>
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Enter keywords...">
+          <button class="search-button">Search</button>
+        </div> 
+        <ul class="product-list">
+          <li class="product-item">
+            <img class="product-image" src="Products/perfumePics/a1.jpg" alt="Product 1">
+            <div class="product-name">oduct 1</div>
+            <div class ="price"> 100$</div>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="Products/perfumePics/a1.jpg" alt="Product 2">
+            <div class="product-name">NAMe 2</div>
+          </li>
+          <li class="product-item">
+            <img class="product-image" src="Products/perfumePics/a1.jpg" alt="Product 3">
+            <div class="product-name">Product 3</div>
+          </li>
+        </ul>
+        -->
+        <br>
+
+        <div onclick ="window.location.href='Products/Men/Acqua Di Gio by Giorgio Armani.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P6/4.jpg" alt="">
+            <div class="p-details">
+                <h2>Acqua Di Gio by Giorgio Armani</h2>
+                <h3>$ 115</h3>
+            </div>
+        </div>
+        <div  onclick ="window.location.href='Products/Men/Ambre Nuit by Christian Dior.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P5/edited/2.jpg" alt="">
+            <div class="p-details">
+                <h2>Ambre Nuit by Christian Dior</h2>
+                <h3>$ 165</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/Aramis by Aramis.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P10/Screenshot 2023-04-22 215502.jpg" alt="">
+            <div class="p-details">
+                <h2>Aramis by Aramis</h2>
+                <h3>$ 36</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/Artisan by John Varvatos.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P8/Screenshot 2023-04-22 213752.jpg" alt="">
+            <div class="p-details">
+                <h2>Artisan by John Varvatos</h2>
+                <h3>$ 45</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/Aventus by Creed.html';"  class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P3/edited/1.jpg" alt="">
+            <div class="p-details">
+                <h2>Aventus by Creede</h2>
+                <h3>$ 369</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/Bleu de Chanel by Chanel.html';"  class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P7/Screenshot 2023-04-22 211758.jpg" alt="">
+            <div class="p-details">
+                <h2>Bleu de Chanel by Chanel</h2>
+                <h3>$ 80</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/P11.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P11/Screenshot 2023-04-22 220314.jpg" alt="">
+            <div class="p-details">
+                <h2>Noir Extreme by Tom Ford</h2>
+                <h3>$ 250</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/P12.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P12/Screenshot 2023-04-22 220812.jpg" alt="">
+            <div class="p-details">
+                <h2>Bottled Marine by HUGO BOSS</h2>
+                <h3>$ 250</h3>
+            </div>
+        </div>
+        <div onclick ="window.location.href='Products/Men/P14.html';" class="product">
+            <img class="product-img" src="Products/Men/MenProducts/P14/Screenshot 2023-04-22 222124.jpg" alt="">
+            <div class="p-details">
+                <h2>L’Homme Ultime by Yves Saint Laurent</h2>
+                <h3>$ 150</h3>
+            </div>
+        </div>
+
+            <div onclick ="window.location.href='Products/Men/P13.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P13/Screenshot 2023-04-22 221442.jpg" alt="">
+                <div class="p-details">
+                    <h2>Jean Paul Gaultier by Jean Paul Gaultier</h2>
+                    <h3>$ 150</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P15.html';"class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P15/Screenshot 2023-04-22 222651.jpg" alt="">
+                <div class="p-details">
+                    <h2>Mr. Burberry by Burberry</h2>
+                    <h3>$ 54</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P16.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P16/Screenshot 2023-04-22 223503.jpg" alt="">
+                <div class="p-details">
+                    <h2>Uomo by Valentino</h2>
+                    <h3>$ 103</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P17.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P17/Screenshot 2023-04-22 224007.jpg" alt="">
+                <div class="p-details">
+                    <h2>L’eau D’issey by Issey Miyake</h2>
+                    <h3>$ 64</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P18.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P18/Screenshot 2023-04-22 230540.jpg" alt="">
+                <div class="p-details">
+                    <h2>CK One by Calvin Klein</h2>
+                    <h3>$ 30</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P19.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P19/Screenshot 2023-04-22 231215.jpg" alt="">
+                <div class="p-details">
+                    <h2>Montblanc Legend by Montblanc</h2>
+                    <h3>$ 54</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Aventus by Creed.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Aventus by Creede</h2>
+                    <h3>$ 369</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P20.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P20/Screenshot 2023-04-22 231727.jpg" alt="">
+                <div class="p-details">
+                    <h2>1 Million by Paco Rabanne</h2>
+                    <h3>$ 80</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P21.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P21/Screenshot 2023-04-22 232507.jpg" alt="">
+                <div class="p-details">
+                    <h2>Gentlemen Only Intense by Givenchy</h2>
+                    <h3>$ 270</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/P22.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P22/Screenshot 2023-04-22 233123.jpg" alt="">
+                <div class="p-details">
+                    <h2>Eros by Versace</h2>
+                    <h3>$ 90</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Pour Homme by Bottega Veneta.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P9/Screenshot 2023-04-22 214633.jpg" alt="">
+                <div class="p-details">
+                    <h2>Pour Homme by Bottega Veneta</h2>
+                    <h3>$ 90</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Sauvage Dior.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P4/edited/1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Sauvage Dior</h2>
+                    <h3>$ 155</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Tobacco Oud.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P2/edited/1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Tobacco Oud</h2>
+                    <h3>$ 360</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Versace Pour Homme by Versace.html';" class="product">
+                <img class="product-img" src="Products/Men/MenProducts/P1/edited/5.jpg" alt="">
+                <div class="p-details">
+                    <h2>Versace Pour Homme by Versace</h2>
+                    <h3>$ 129</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Chanel No. 5.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/a1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Chanel No. 5</h2>
+                    <h3>$ 120</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Dolce & Gabbana LightBlue.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/b1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Dolce & Gabbana LightBlue</h2>
+                    <h3>$ 200</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Gucci Bloom.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/g1.png" alt="">
+                <div class="p-details">
+                    <h2>Gucci Bloom</h2>
+                    <h3>$ 130</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Marc Jacobs Daisy.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/c3.jpg" alt="">
+                <div class="p-details">
+                    <h2>Marc Jacobs Daisy</h2>
+                    <h3>$ 100</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Tom Ford Black Orchid.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/f1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Tom Ford Black Orchid</h2>
+                    <h3>$ 200</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Viktor & Rolf Flowerbomb.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/d3.jpg" alt="">
+                <div class="p-details">
+                    <h2>Viktor & Rolf Flowerbomb</h2>
+                    <h3>$ 200</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Yves Saint Laurent Black Opium.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/h1.webp" alt="">
+                <div class="p-details">
+                    <h2>Yves Saint Laurent Black Opium</h2>
+                    <h3>$ 120</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/La Vie.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/i4.webp" alt="">
+                <div class="p-details">
+                    <h2>La Vie est Belle Lancome</h2>
+                    <h3>$ 120</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Versace Bright Crystal Absolu.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/j1.webp" alt="">
+                <div class="p-details">
+                    <h2>Versace Bright Crystal Absolu</h2>
+                    <h3>$ 130</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/Dior J adore.html';" class="product">
+                <img class="product-img" src="Products/perfumePics/e2.png" alt="">
+                <div class="p-details">
+                    <h2>Dior J'adore</h2>
+                    <h3>$ 120</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/GucciGuilty.html';" class="product">
+                <img class="product-img" src="Products/uniPerfume/unipics/gg1.webp" alt="">
+                <div class="p-details">
+                    <h2>Gucci Guilty</h2>
+                    <h3>$ 90</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='Products/Men/JeanPaulGaultier2.html';" class="product">
+                <img class="product-img" src="Products/uniPerfume/unipics/jp4.jpg" alt="">
+                <div class="p-details">
+                    <h2>Jean Paul Gaultier2</h2>
+                    <h3>$ 90</h3>
+                </div>
+            </div>
+
+            <div onclick ="window.location.href='RP/CarolinaHerreraGoodGirl.html';" class="product">
+                <img class="product-img" src="Products/RP/rp/ch2.jpg" alt="">
+                <div class="p-details">
+                    <h2>Carolina Herrera Good Girl</h2>
+                    <h3>$ 120</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='RP/ChanelCocoMademoiselle.html';" class="product">
+                <img class="product-img" src="Products/RP/rp/cc2.jpg" alt="">
+                <div class="p-details">
+                    <h2>Chanel Coco Mademoiselle</h2>
+                    <h3>$ 140</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='RP/Jo Malone English Pear & Freesia.html';" class="product">
+                <img class="product-img" src="Products/RP/rp/jo2.jpg" alt="">
+                <div class="p-details">
+                    <h2>Jo Malone English Pear & Freesia</h2>
+                    <h3>$ 100</h3>
+                </div>
+            </div>
+            <div onclick ="window.location.href='RP/LancomeLaVieEstBelle.html';" class="product">
+                <img class="product-img" src="Products/RP/rp/ll3.jpg" alt="">
+                <div class="p-details">
+                    <h2>Lancome La Vie Est Belle</h2>
+                    <h3>$ 120</h3>
+                </div>
+            </div>
+
+
+        </div>
+      </div>
+    
+      <footer class ="mt-5 py-5">
+        <div class ="row container2 mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="img/logo2.png" alt="">
+                <p class="pt-3"> The Best store ever and it was excelent much more than expected as well as 
+                    far away but in the end it doesent even matter</p>
+            </div>
+            <div class ="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class ="pb-2">Featured</h5>
+                <ul class ="text-uppercase list-unstyled">
+                    <li><a href ="ProductM.html">Men</a></li>
+                    <li><a href ="ProductW.html">Women</a></li>
+                    <li><a href ="ProductUni.html">Unisex</a></li>
+                    <li><a href ="ContactUs.html">Contact Us</a></li>
+                    <li><a href ="Terms&C.html">Terms & Conditions</a></li>
+                    <li><a href ="Privcy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class ="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class ="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class ="text-uppercase">Address</h6>
+                    <p>#6299,Zeneth Building , Melenium Drive, Malabe,Sri  Lanka</p>
+                </div>
+                <div>
+                    <h6 class ="text-uppercase">Phone</h6>
+                    <p> +94 71 915 8514</p>
+                </div>
+                <div>
+                    <h6 class ="text-uppercase">Email</h6>
+                    <p> perfumeland@gmail.com</p>
+                </div>
+            </div>
+            <div class ="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class ="pb-2">Insatgram</h5>
+                <div class ="row">
+                    <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                    <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                    <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                    <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                    <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class ="copyright mt-5">
+            <div class="row container3 mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="img/payment.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p> Hm6299 @Ecom  2023 . All Right Reserverd</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+				<a href="#"><i class='bx bxl-twitter'></i></a>
+				<a href="#"><i class='bx bxl-instagram'></i></a>
+				<a href="#"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        // JavaScript code for handling search functionality
+        var searchInput = document.querySelector('.search-input');
+        var productItems = document.querySelectorAll('.product');
+    
+        searchInput.addEventListener('input', function() {
+          var keywords = searchInput.value.toLowerCase();
+    
+          productItems.forEach(function(item) {
+            var productName = item.querySelector('.p-details').textContent.toLowerCase();
+    
+            if (productName.indexOf(keywords) > -1) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      </script>
+
+</body>
+</html>

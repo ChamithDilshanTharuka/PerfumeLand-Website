@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="cart01.css">
+    
+</head>
+<body>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <div class="container">
+      <img src="logo.jpg" alt="" style="font-size: 10px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span ><i id ="bar" class='bx bx-menu' id="menu-icon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item">
+            <a class="nav-link  " href="PLand.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ProductM.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ProductW.html">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ProductUni.html">Unisex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            
+            <i onclick ="window.location.href='search.html';" class='bx bx-search' id="search-icon"></i>
+            <i onclick ="window.location.href='Cart.html';" class='bx bx-cart-alt active' id="cart-icon"></i>
+            <i onclick ="window.location.href='Login/LoginM.html';" class='bx bx-user'></i>
+            
+          </li>
+         
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Promo Code -->
+    
+    <div class="basket" >
+      <div class="basket-module">
+        <label for="promo-code" style="font-size: 18px;"><b>Enter a promotional code</b></label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+
+      <!-- Basket Labels -->
+      
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <!-- Product 01 -->
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="C:\Users\MSI\Desktop\P\Products\Men\MenProducts\P1\1.jpg" alt="SAUVAGE perfume" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span> Versace Pour Homme by Versace</strong> Gents Perfume</h1>
+            <p><strong>Launched: 2015, Size 100ml</strong></p>
+            <p>Product Code - 12345678</p>
+          </div>
+        </div>
+        <div class="price">129.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">129.00</div>
+        <div class="remove">
+          <button style="font-size: 14px;">Remove</button>
+        </div>
+      </div>
+
+      <!-- Product 02 -->
+
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="a1.jpg" alt="creed perfume" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span> Chanel No. 5</strong> UniSex Perfume</h1>
+            <p><strong>Launched: 2010, Size 200ml</strong></p>
+            <p>Product Code - 223456789</p>
+          </div>
+        </div>
+        <div class="price">130.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">130.00</div>
+        <div class="remove">
+          <button style="font-size: 14px;">Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <!-- Total -->
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Cart</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">504.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Pick UP</option>
+             <option value="first-class">FeDEX Mail 1st Class</option>
+             <option value="second-class">DHL Air Mail </option>
+             <option value="signed-for"> Cash on Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">504.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button onclick ="window.location.href='Checkout.html';" class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+        <div>
+        </button > Go To Checkout </button>
+      
+        </div>
+      </div>
+    </aside>
+  </main>
+  <div>
+  </button onclick ="window.location.href='Checkout.html';"> Go To Checkout </button>
+
+  </div>
+
+
+  
+  <footer class ="mt-5 py-5">
+    <div class ="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="img/logo2.png" alt="">
+            <p class="pt-3"> The Best store ever and it was excelent much more than expected as well as 
+                far away but in the end it doesent even matter</p>
+        </div>
+        <div class ="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class ="pb-2">Featured</h5>
+            <ul class ="text-uppercase list-unstyled">
+                <li><a href ="ProductM.html">Men</a></li>
+                <li><a href ="ProductW.html">Women</a></li>
+                <li><a href ="ProductUni.html">Unisex</a></li>
+                <li><a href ="Terms&C.html">Terms & Conditions</a></li>
+                <li><a href ="ReturnPolicy.html">Return Policy</a></li>
+                
+                <li><a href ="Privcy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class ="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class ="pb-2">Contact Us</h5>
+            <div>
+                <h6 class ="text-uppercase">Address</h6>
+                <p>#6299,Zeneth Building , Melenium Drive, Malabe,Sri  Lanka</p>
+            </div>
+            <div>
+                <h6 class ="text-uppercase">Phone</h6>
+                <p> +94 71 915 8514</p>
+            </div>
+            <div>
+                <h6 class ="text-uppercase">Email</h6>
+                <p> perfumeland@gmail.com</p>
+            </div>
+        </div>
+        <div class ="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class ="pb-2">Insatgram</h5>
+            <div class ="row">
+                <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+                <img class = "img-fluid w-25 h-100 m-2"src ="img/insta/1.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class ="copyright mt-5">
+        <div class="row container mx-auto">
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <img src="img/payment.png">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                <p> Hm6299 @Ecom  2023 . All Right Reserverd</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="cart01.js"></script>
+</body>
+
+</html>
